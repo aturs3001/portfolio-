@@ -211,7 +211,7 @@ html {
 }
 
 /* Hero description text with animation */
-.hero p {
+.hero p:not(.subtitle) {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     max-width: 600px;
@@ -219,6 +219,32 @@ html {
     margin-right: auto;
     opacity: 0;
     animation: fadeInUp 1s ease 0.4s forwards;
+}
+
+/* Hero description, skills, and working sections */
+.hero-description,
+.hero-skills,
+.hero-working {
+    margin: 2rem auto 1rem auto;
+    max-width: 600px;
+    text-align: left;
+    color: #e0e7ef;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.hero-description ul,
+.hero-skills ul,
+.hero-working ul {
+    margin-left: 1.2rem;
+}
+
+.hero-skills h3,
+.hero-working h3 {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 /* Call-to-action buttons container */
